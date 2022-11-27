@@ -89,37 +89,37 @@ else {
 }
 
 
-# #Install New apps
-# Foreach ($app in $apps) {
-#     #check if the app is already installed
-#     $listApp = winget list --exact -q $app.name
-#     if (![String]::Join("", $listApp).Contains($app.name)) {
-#         Write-host "Installing:" $app.name
-#         if ($app.location -ne $null) {#Installation if there is a custom install location 
-#             $installdir = $app.location
-#             if ($app.source -ne $null) {
-#                 winget install --exact --silent $app.name --source $app.source --location $installdir
-#             }
-#             else {
-#                 winget install --exact --silent $app.name --location $app.location
-#             }
-#         }
-#         else {#Installation if there is no custom install location
-#             $installdir = $standartInstall
-#             if ($app.source -ne $null) {
-#                 winget install --exact --silent $app.name --source $app.source --location $installdir
-#             }
-#             else {
-#                 winget install --exact --silent $app.name --location $installdir
-#             }
-#         }
-#     }
-#     else {
-#     Write-Host $app.name " is already installed!"
-#     Write-host "Skipping Installation of: " $app.name
-#     }
-#     Write-host "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-# }
+#Install New apps
+Foreach ($app in $apps) {
+    #check if the app is already installed
+    $listApp = winget list --exact -q $app.name
+    if (![String]::Join("", $listApp).Contains($app.name)) {
+        Write-host "Installing:" $app.name
+        if ($app.location -ne $null) {#Installation if there is a custom install location 
+            $installdir = $app.location
+            if ($app.source -ne $null) {
+                winget install --exact --silent $app.name --source $app.source --location $installdir
+            }
+            else {
+                winget install --exact --silent $app.name --location $app.location
+            }
+        }
+        else {#Installation if there is no custom install location
+            $installdir = $standartInstall
+            if ($app.source -ne $null) {
+                winget install --exact --silent $app.name --source $app.source --location $installdir
+            }
+            else {
+                winget install --exact --silent $app.name --location $installdir
+            }
+        }
+    }
+    else {
+    Write-Host $app.name " is already installed!"
+    Write-host "Skipping Installation of: " $app.name
+    }
+    Write-host "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+}
 
 
 
@@ -141,40 +141,40 @@ else {
 
 # );
 
-Foreach ($app in $apps) {
-    #check if the app is already installed
-    Write-host "Currently processing: "$app.name
-    $listApp = winget list --exact -q $app.name
-    Write-host $listApp
-    Write-host $app.location 
-    if (![String]::Join("", $listApp).Contains($app.name)) {
-        Write-host "Installing:" $app.name
-        if ($app.location -ne $null) {#Installation if there is a custom install location
-            $installdir = $app.location 
-            Write-host "not standart install location"
-            if ($app.source -ne $null) {
-                Write-host "1 winget install --exact --silent $app.name --source $app.source --location $installdir"
-            }
-            else {
-                Write-host "2 winget install --exact --silent $app.name --location $app.location"
-            }
-        }
-        else {#Installation if there is no custom install location
-            $installdir = $standartInstall
-            if ($app.source -ne $null) {
-                Write-host "3 winget install --exact --silent $app.name --source $app.source --location $installdir"
-            }
-            else {
-                Write-host "4 winget install --exact --silent $app.name --location $installdir"
-            }
-        }
-    }
-    else {
-    Write-Host $app.name " is already installed!"
-    Write-host "Skipping Installation of: " $app.name
-    }
-    Write-host "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-}
+# Foreach ($app in $apps) {
+#     #check if the app is already installed
+#     Write-host "Currently processing: "$app.name
+#     $listApp = winget list --exact -q $app.name
+#     Write-host $listApp
+#     Write-host $app.location 
+#     if (![String]::Join("", $listApp).Contains($app.name)) {
+#         Write-host "Installing:" $app.name
+#         if ($app.location -ne $null) {#Installation if there is a custom install location
+#             $installdir = $app.location 
+#             Write-host "not standart install location"
+#             if ($app.source -ne $null) {
+#                 Write-host "1 winget install --exact --silent $app.name --source $app.source --location $installdir"
+#             }
+#             else {
+#                 Write-host "2 winget install --exact --silent $app.name --location $app.location"
+#             }
+#         }
+#         else {#Installation if there is no custom install location
+#             $installdir = $standartInstall
+#             if ($app.source -ne $null) {
+#                 Write-host "3 winget install --exact --silent $app.name --source $app.source --location $installdir"
+#             }
+#             else {
+#                 Write-host "4 winget install --exact --silent $app.name --location $installdir"
+#             }
+#         }
+#     }
+#     else {
+#     Write-Host $app.name " is already installed!"
+#     Write-host "Skipping Installation of: " $app.name
+#     }
+#     Write-host "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+# }
 
 #Finisher
 Write-host "Successfully finished setting up your PC!"

@@ -4,19 +4,13 @@ you need to execute the following Powershell command as Administrator if you wan
 # Running the PC Setup script
 1. Start the Powershell in Admin Mode
 2. Execute from Github (no download required)
-
-
-'''
+```
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/Codebytes/29bf18015f6e93fca9421df73c6e512c/raw/'))"
-'''
-
+```
 
 or
 
-
 3. Execute locally after download
-
-
-'''
+```
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "\\wsl$\Ubuntu-22.04\home\oellers\documents\WinGetFreshPC\SetupPC.ps1"
-'''
+```

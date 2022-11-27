@@ -1,5 +1,7 @@
 you need to execute the following Powershell command as Administrator if you want to use a custom applist file. This sets the ExecutionPolicy to Unrestricted in Powershell for this session only.
-'Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force'
+
+NOTE: This might be no longer necessary since the ExecutionPolicy is set to Bypass if you use the command shown below under 2. or 3. . However, admin mode is still advisable.
+```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force```
 
 # Running the PC Setup script
 1. Start the Powershell in Admin Mode

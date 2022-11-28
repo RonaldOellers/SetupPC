@@ -1,16 +1,8 @@
 $apps = @(
     #Communication
     @{name = "WhatsApp.WhatsApp" },
-    @{name = "Zoom.Zoom" },
     #Coding 
-    @{name = "Microsoft.PowerShell" }, 
-    @{name = "Microsoft.VisualStudioCode" }, 
-    @{name = "Microsoft.WindowsTerminal"; source = "msstore" },  
-    @{name = "Microsoft.PowerToys" },
     @{name = "Notepad++.Notepad++" },
-    @{name = "EclipseAdoptium.Temurin.19.JDK" },#Java especialy for Minecraft
-    #Cloud Services 
-    @{name = "Seafile.Seafile" },
     #Nvidia
     @{name = "Nvidia.GeForceExperience" },
     @{name = "Nvidia.Broadcast" }#AI based noise removal from microphone input for RTX cards https://www.nvidia.com/en-gb/geforce/broadcasting/broadcast-app/

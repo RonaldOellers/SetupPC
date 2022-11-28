@@ -12,7 +12,16 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.
 
 or
 
-3. Execute locally after download
+3. Execute locally after download... example:
 ```
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "\\wsl$\Ubuntu-22.04\home\oellers\documents\WinGetFreshPC\SetupPC.ps1"
 ```
+
+
+If you need an overview of winget packages search [here](https://winget.run/) (only shows winget source packages, not msstore)
+
+It automatically agrees to all source/package agreements so you do not need to stay with the pc while its installing see winget flag: ```--accept-source-agreements```   ```--accept-package-agreements```
+
+To show all available packages use: ```winget search -q `"`"```  and ```winget search -q `"`" | sort``` to sort them alphabetically. In case the list is too long, use the following command to redirect the output to a file ```winget search -q `"`" | sort | Out-File C:\Users\Ronald\Desktop\WingetPackages.txt```
+
+To check what you have installed type: ```winget list```

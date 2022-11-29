@@ -6,6 +6,7 @@ $apps = @(
     #Coding and utilty  
     @{name = "Notepad++.Notepad++"; location = "C:\Programme\Notepad++\" },
     @{name = "EclipseAdoptium.Temurin.19.JDK"; location = "C:\Programme\EclipseAdoptium\" },#Java especialy for Minecraft
+    @{name = "WinMerge.WinMerge"; location = "C:\Programme\WinMerge\" },#WinMerge
 
     #Browser
     @{name = "Mozilla.Firefox"; location = "C:\Programme\Firefox\" },

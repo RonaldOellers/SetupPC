@@ -75,7 +75,9 @@ if ("" -eq $CustomApps){
     @{name = "CrystalDewWorld.CrystalDiskMark"; location = "C:\Programme\Benchmark\CrystalDiskMark\"  },#Crystal Disc mark
     #Nvidia
     @{name = "Nvidia.GeForceExperience"; location = "C:\Programme\Programme\Nvidia\GeForceExperience\" },
+    @{name = "9NF8H0H7WMLT"; location = "C:\Programme\Programme\Nvidia\ControlPanel\"; source = "msstore"; },#controllPanel
     @{name = "Nvidia.Broadcast"; location = "C:\Programme\Programme\Nvidia\Broadcast\" }#AI based noise removal from microphone input for RTX cards https://www.nvidia.com/en-gb/geforce/broadcasting/broadcast-app/
+    @{name = "Nvidia.PhysX"; location = "C:\Programme\Programme\Nvidia\PhysX\" }
     # @{name = "Nvidia.RTXVoice"; location = "C:\Programme\Programme\Nvidia\RTXVoice\ }#AI based noise removal from microphone input for GTX cards https://www.nvidia.com/en-gb/geforce/guides/broadcast-app-setup-guide/
 
 

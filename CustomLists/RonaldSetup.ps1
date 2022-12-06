@@ -36,7 +36,7 @@ $apps = @(
     @{name = "GOG.Galaxy"; location = "C:\Games\GOG\"  },#GOG Galaxy
     @{name = "Ubisoft.Connect"; location = "C:\Games\Ubisoft\"  },#Uplay
     @{name = "ElectronicArts.EADesktop"; location = "C:\Games\EADesktop\"  },#Origin
-    @{name = "Peppy.Osu!"; location = "S:\Games\Osu\" },#Osu
+    @{name = "Peppy.Osu!"; location = "E:\Games\Osu\" },#Osu
 
     #Game Utility
     @{name = "Discord.Discord"; location = "C:\Programme\Discord\" },

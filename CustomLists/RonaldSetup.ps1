@@ -29,6 +29,9 @@ $apps = @(
     @{name = "Adobe.Acrobat.Reader.64-bit"; location = "C:\Programme\Adobe\AcrobatReader" },#Acrobat Reader
     @{name = "TeXstudio.TeXstudio "; location = "C:\Programme\TeXstudio" },#TeXstudio
     @{name = "JabRef.JabRef"; location = "C:\Programme\Jabref\" },#Jabref
+    
+    #Creativity
+    @{name = "KDE.Krita"; location = "C:\Programme\Krita" },#Krita Free opensource Drawing Software
 
     #Game Clients
     @{name = "Valve.Steam"; location = "C:\Games\Steam\" },#Steam

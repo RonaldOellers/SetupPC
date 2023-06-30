@@ -10,6 +10,11 @@ NOTE: This might be no longer necessary since the ExecutionPolicy is set to Bypa
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RonaldOellers/SetupPC/master/SetupPC.ps1'))"
 ```
 
+somethis this is necessary:
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/RonaldOellers/SetupPC/master/SetupPC.ps1'))
+```
+
 or
 
 3. Execute locally after download... example:

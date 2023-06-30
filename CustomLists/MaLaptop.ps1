@@ -24,6 +24,7 @@ $apps = @(
     @{name = "RARLab.WinRAR"; location = "C:\Programme\Winrar\" },#Winrar
     @{name = "VideoLAN.VLC"; location = "C:\Programme\VLC\" },#VLC Media Player
     @{name = "Piriform.Recuva"; location = "C:\Programme\Recuva\" },#data recovery
+    @{name = "TeamViewer.TeamViewer"; location = "C:\Programme\TeamViewer\" },#TeamViewer
 
     #Benchmarking
     @{name = "9PGZKJC81Q7J"; location = "C:\Programme\Benchmark\Cinebench" },#Cinebench

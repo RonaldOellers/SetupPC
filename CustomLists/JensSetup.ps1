@@ -52,7 +52,7 @@ $apps = @(
 
     #Nvidia
     @{name = "Nvidia.GeForceExperience"; location = "C:\Programme\Programme\Nvidia\GeForceExperience\" },
-    @{name = "9NF8H0H7WMLT"; location = "C:\Programme\Programme\Nvidia\ControlPanel\"; source = "msstore"; },#controllPanel
+    @{name = "9NF8H0H7WMLT"; location = "C:\Programme\Programme\Nvidia\ControlPanel\"; source = "msstore"; }#controllPanel
 
     );
 

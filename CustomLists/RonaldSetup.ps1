@@ -11,7 +11,7 @@ $apps = @(
     @{name = "Microsoft.WindowsTerminal"; source = "msstore"; location = "C:\Programme\WindowsTerminal\" },  
     @{name = "Microsoft.PowerToys" },
     @{name = "Notepad++.Notepad++"; location = "C:\Programme\Notepad++\" },
-    @{name = "EclipseAdoptium.Temurin.19.JDK" },#Java especialy for Minecraft
+    @{name = "EclipseAdoptium.Temurin.21.JDK" },#Java especialy for Minecraft
 
     #Cloud Services 
     @{name = "Seafile.Seafile"; location = "C:\Programme\Seafile\" },
@@ -38,7 +38,7 @@ $apps = @(
     @{name = "Battle.net"; location = "C:\Games\Battlenet\"  },#Battlenet
     @{name = "GOG.Galaxy"; location = "C:\Games\GOG\"  },#GOG Galaxy
     @{name = "Ubisoft.Connect"; location = "C:\Games\Ubisoft\"  },#Uplay
-    @{name = "ElectronicArts.EADesktop"; location = "C:\Games\EADesktop\"  },#Origin
+    @{name = "ElectronicArts.Origin"; location = "C:\Games\Origin\"  },#Origin
     @{name = "Peppy.Osu!"; location = "E:\Games\Osu\" },#Osu
 
     #Game Utility
